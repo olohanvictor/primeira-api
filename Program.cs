@@ -15,7 +15,7 @@ var usuarios = new List<Usuario>();
 var posts = new List<Post>();
 
 // Rotas
-//Get
+//GET
 app.MapGet("/", () =>
 {
     return "API rodando";
@@ -52,7 +52,7 @@ app.MapGet("/posts/{id}", (int id) =>
     return Results.Ok(post);
 });
 
-//Post
+//POST
 app.MapPost("/usuarios", (Usuario usuario) =>
 {
     usuarios.Add(usuario);
@@ -66,6 +66,24 @@ app.MapPost("/posts", (Post post) =>
 
 });
 
+//PUT
+app.MapPut("/usuarios/{id}", (int id, Usuario usuarioAtualizado) =>
+{
+    var usuario = usuarios.FirstOrDefault(u => u.Id == id);
+    usuario.Nome = usuarioAtualizado.Nome;
+
+    return Results.Ok(usuario);
+});
+
+
+//DELETE
+app.MapDelete("/usuarios/{id}", (int id) =>
+{
+    var usuario = usuarios.FirstOrDefault(u => u.Id == id);
+    usuarios.Remove(usuario);
+
+    return Results.NoContent();
+});
 
 app.Run();
 

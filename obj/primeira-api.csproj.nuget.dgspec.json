@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\primeira-api.csproj": {}
+    "/home/lohanvictor/Documentos/programação/primeira-api/primeira-api.csproj": {}
   },
   "projects": {
-    "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\primeira-api.csproj": {
+    "/home/lohanvictor/Documentos/programação/primeira-api/primeira-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\primeira-api.csproj",
+        "projectUniqueName": "/home/lohanvictor/Documentos/programação/primeira-api/primeira-api.csproj",
         "projectName": "primeira-api",
-        "projectPath": "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\primeira-api.csproj",
-        "packagesPath": "C:\\Users\\ohomemempessoa\\.nuget\\packages\\",
-        "outputPath": "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\obj\\",
+        "projectPath": "/home/lohanvictor/Documentos/programação/primeira-api/primeira-api.csproj",
+        "packagesPath": "/home/lohanvictor/.nuget/packages/",
+        "outputPath": "/home/lohanvictor/Documentos/programação/primeira-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ohomemempessoa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/lohanvictor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.310/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
