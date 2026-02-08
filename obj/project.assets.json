@@ -582,19 +582,19 @@
     ]
   },
   "packageFolders": {
-    "/home/lohanvictor/.nuget/packages/": {}
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lohanvictor/Documentos/programação/primeira-api/primeira-api.csproj",
+      "projectUniqueName": "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\primeira-api.csproj",
       "projectName": "primeira-api",
-      "projectPath": "/home/lohanvictor/Documentos/programação/primeira-api/primeira-api.csproj",
-      "packagesPath": "/home/lohanvictor/.nuget/packages/",
-      "outputPath": "/home/lohanvictor/Documentos/programação/primeira-api/obj/",
+      "projectPath": "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\primeira-api.csproj",
+      "packagesPath": "C:\\Users\\ohomemempessoa\\.nuget\\packages\\",
+      "outputPath": "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/lohanvictor/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ohomemempessoa\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -652,7 +652,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.310/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

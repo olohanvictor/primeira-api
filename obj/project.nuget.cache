@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "waZu5UKgkAI=",
+  "dgSpecHash": "XVYwJLtqE0E=",
   "success": true,
-  "projectFilePath": "/home/lohanvictor/Documentos/programação/primeira-api/primeira-api.csproj",
+  "projectFilePath": "D:\\ohomemempessoa\\Documents\\Meus arquivos\\Programação\\primeira-api\\primeira-api.csproj",
   "expectedPackageFiles": [
-    "/home/lohanvictor/.nuget/packages/microsoft.aspnetcore.openapi/9.0.11/microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
-    "/home/lohanvictor/.nuget/packages/microsoft.extensions.apidescription.server/9.0.0/microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
-    "/home/lohanvictor/.nuget/packages/microsoft.openapi/2.4.1/microsoft.openapi.2.4.1.nupkg.sha512",
-    "/home/lohanvictor/.nuget/packages/swashbuckle.aspnetcore/10.1.1/swashbuckle.aspnetcore.10.1.1.nupkg.sha512",
-    "/home/lohanvictor/.nuget/packages/swashbuckle.aspnetcore.swagger/10.1.1/swashbuckle.aspnetcore.swagger.10.1.1.nupkg.sha512",
-    "/home/lohanvictor/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.1.1/swashbuckle.aspnetcore.swaggergen.10.1.1.nupkg.sha512",
-    "/home/lohanvictor/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.1.1/swashbuckle.aspnetcore.swaggerui.10.1.1.nupkg.sha512",
-    "/home/lohanvictor/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\swashbuckle.aspnetcore\\10.1.1\\swashbuckle.aspnetcore.10.1.1.nupkg.sha512",
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.1\\swashbuckle.aspnetcore.swagger.10.1.1.nupkg.sha512",
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.1\\swashbuckle.aspnetcore.swaggergen.10.1.1.nupkg.sha512",
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.1\\swashbuckle.aspnetcore.swaggerui.10.1.1.nupkg.sha512",
+    "C:\\Users\\ohomemempessoa\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }

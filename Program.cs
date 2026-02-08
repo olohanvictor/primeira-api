@@ -1,12 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔹 Swagger
+//Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// 🔹 Swagger UI
+//Swagger UI
 app.UseSwagger();
 app.UseSwaggerUI();
 
@@ -14,8 +14,44 @@ app.UseSwaggerUI();
 var usuarios = new List<Usuario>();
 var posts = new List<Post>();
 
-// Rotas
-//GET
+
+//CRUD:
+//CREATE 
+//READ
+//UPDATE
+//DELETE
+
+//Rotas
+//POST: o CREATE
+app.MapPost("/usuarios", (Usuario usuario) =>
+{
+    if (string.IsNullOrWhiteSpace(usuario.Nome))
+        return Results.BadRequest("Nome é obrigatório");
+
+    if (usuarios.Any(u => u.Id == usuario.Id))
+        return Results.Conflict("Id de usuário já está sendo utilizado");
+
+    usuarios.Add(usuario);
+    return Results.Created($"/usuarios/{usuario.Id}", usuario);
+});
+
+
+app.MapPost("/usuarios/{idAutor}/posts", (int idAutor, Post post) =>
+{
+    var usuarioExiste = usuarios.Any(u => u.Id == idAutor);
+
+    if (!usuarioExiste)
+        return Results.NotFound("Usuário não existe");
+
+    post.IdAutor = idAutor;
+    post.Id = posts.Count + 1;
+
+    posts.Add(post);
+
+    return Results.Created($"/posts/{post.Id}", post);
+});
+
+//GET: o READ
 app.MapGet("/", () =>
 {
     return "API rodando";
@@ -52,38 +88,37 @@ app.MapGet("/posts/{id}", (int id) =>
     return Results.Ok(post);
 });
 
-//POST
-app.MapPost("/usuarios", (Usuario usuario) =>
+app.MapGet("/posts", () =>
 {
-    usuarios.Add(usuario);
-    return Results.Created($"/usuarios/{usuario.Id}", usuario);
+    return posts;
 });
 
-app.MapPost("/posts", (Post post) => 
-{
-    posts.Add(post);
-    return Results.Created($"/posts/{post.Id}", post);
-
-});
-
-//PUT
+//PUT: O UPDATE
 app.MapPut("/usuarios/{id}", (int id, Usuario usuarioAtualizado) =>
 {
     var usuario = usuarios.FirstOrDefault(u => u.Id == id);
-    usuario.Nome = usuarioAtualizado.Nome;
 
+    if (usuario == null)
+        return Results.NotFound("Usuário não encontrado");
+
+    if (string.IsNullOrWhiteSpace(usuarioAtualizado.Nome))
+        return Results.BadRequest("Nome é obrigatório");
+
+    usuario.Nome = usuarioAtualizado.Nome;
     return Results.Ok(usuario);
 });
 
-
-//DELETE
 app.MapDelete("/usuarios/{id}", (int id) =>
 {
     var usuario = usuarios.FirstOrDefault(u => u.Id == id);
-    usuarios.Remove(usuario);
 
+    if (usuario == null)
+        return Results.NotFound("Usuário não encontrado");
+
+    usuarios.Remove(usuario);
     return Results.NoContent();
 });
+
 
 app.Run();
 
@@ -91,12 +126,12 @@ app.Run();
 public class Usuario
 {
     public int Id { get; set; }
-    public string Nome { get; set; }
+    public required string Nome { get; set; }
 }
 
 public class Post
 {
     public int Id { get; set; }
     public int IdAutor { get; set; }
-    public string Conteudo { get; set; }
+    public required string Conteudo { get; set; }
 }
